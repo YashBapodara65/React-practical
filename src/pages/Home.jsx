@@ -1,9 +1,9 @@
-import ProductCom from "../components/ProductsCom";
+import RecipeCom from "../components/RecipeCom";
 
 function Home() {
   return (
     <>
-      <ProductCom />
+      <RecipeCom />
     </>
   );
 }

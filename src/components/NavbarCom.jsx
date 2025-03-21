@@ -50,7 +50,7 @@ function NavbarCom() {
               </Link>
               <Link to="/addForm" onClick={() => setDisp(!disp)}>
                 <li className="text-white font-semibold hover:bg-gray-600 rounded-md px-5 text-lg">
-                  Add Product
+                  Add Recipe
                 </li>
               </Link>
             </ul>

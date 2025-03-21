@@ -1,10 +1,9 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import axios from "axios";
 import { editApi } from "../features/ApiSlice";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function EditForm() {
 
@@ -13,7 +12,6 @@ function EditForm() {
     const location = useLocation();
     const single_data = location.state || {};
   
-    // State with default values to avoid errors
     const [formData, setFormData] = useState({
       url: single_data?.url || "",
       title: single_data?.title || "",
@@ -79,7 +77,7 @@ function EditForm() {
                 }}
               />
             </div>
-            <div className="col-span-1 flex flex-col">
+            <div className="col-span-2 flex flex-col">
               <TextField
                 id="outlined-number"
                 label="Recipe Title *"
@@ -98,7 +96,7 @@ function EditForm() {
                 }}
               />
             </div>
-            <div className="col-span-1 flex flex-col">
+            <div className="col-span-2 flex flex-col">
               <TextField
                 id="outlined-number"
                 label="Recipe Price *"
